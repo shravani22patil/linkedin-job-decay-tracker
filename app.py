@@ -34,7 +34,11 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-API_URL = "http://localhost:8000"
+import os
+try:
+    API_URL = st.secrets["API_URL"]
+except Exception:
+    API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 # ── Colour constants (shared across all charts) ────────────────────────────────
 C = {
