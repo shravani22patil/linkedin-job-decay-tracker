@@ -1,0 +1,136 @@
+=== SKILL FREQUENCY (ALL JOBS) ===
+           skill  total_mentions  overall_pct trend_direction
+           Excel           10419        17.04     ↓ Declining
+               R            2690         4.40     ↓ Declining
+             SQL            1954         3.20     ↓ Declining
+          Python            1946         3.18     ↓ Declining
+      Statistics            1730         2.83     ↓ Declining
+Machine Learning            1584         2.59     ↓ Declining
+        Power BI            1360         2.22     ↓ Declining
+         Tableau             769         1.26     ↓ Declining
+           Azure             712         1.16       ↑ Growing
+             AWS             596         0.97        → Stable
+           Spark             311         0.51     ↓ Declining
+             GCP             305         0.50        → Stable
+          Looker             247         0.40     ↓ Declining
+           NumPy             188         0.31     ↓ Declining
+       Snowflake             177         0.29     ↓ Declining
+          Pandas             159         0.26     ↓ Declining
+    Scikit-learn             146         0.24     ↓ Declining
+        BigQuery             121         0.20     ↓ Declining
+             dbt              60         0.10        → Stable
+         Airflow              59         0.10        → Stable
+
+=== SKILL FREQUENCY (TECH ROLES ONLY) ===
+           skill  tech_mentions  tech_pct  april_pct  may_pct  june_pct
+             SQL            495     52.33      56.04    48.33     55.78
+          Python            448     47.36      50.00    45.66     47.24
+      Statistics            379     40.06      40.60    41.20     36.68
+Machine Learning            328     34.67      43.29    32.07     27.64
+        Power BI            248     26.22      32.55    24.72     20.10
+           Excel            236     24.95      27.52    22.27     27.14
+         Tableau            194     20.51      27.18    17.59     17.09
+               R            179     18.92      20.13    18.49     18.09
+          Pandas            136     14.38      13.42    16.93     10.05
+    Scikit-learn            128     13.53      12.08    16.48      9.05
+           NumPy            125     13.21      12.42    16.48      7.04
+           Azure             92      9.73       6.38     9.58     15.08
+          Looker             88      9.30      14.09     6.24      9.05
+             AWS             84      8.88       6.38     8.02     14.57
+       Snowflake             83      8.77      15.44     5.79      5.53
+        BigQuery             62      6.55      13.42     3.34      3.52
+           Spark             43      4.55       4.03     3.34      8.04
+             GCP             42      4.44       2.68     4.23      7.54
+         Airflow             29      3.07       1.01     2.67      7.04
+             dbt             22      2.33       1.34     2.00      4.52
+
+=== SKILL SURVIVAL COMPARISON (April cohort) ===
+           skill  in_survived_pct  in_disappeared_pct  survival_advantage signal_strength                                                          interpretation
+             SQL             5.26                3.48               1.779        Moderate        Roles requiring SQL survive longer (harder to fill or re-listed)
+      Statistics             4.71                3.29               1.421        Moderate Roles requiring Statistics survive longer (harder to fill or re-listed)
+           Spark             1.39                0.55               0.836        Moderate      Roles requiring Spark survive longer (harder to fill or re-listed)
+           Excel            17.17               16.63               0.545        Moderate      Roles requiring Excel survive longer (harder to fill or re-listed)
+          Python             3.88                3.46               0.414            Weak                            No meaningful survival difference for Python
+             AWS             1.39                1.03               0.355            Weak                               No meaningful survival difference for AWS
+           Azure             1.39                1.16               0.226            Weak                             No meaningful survival difference for Azure
+          Looker             0.55                0.55               0.005            Weak                            No meaningful survival difference for Looker
+             GCP             0.55                0.55               0.005            Weak                               No meaningful survival difference for GCP
+         Tableau             1.39                1.46              -0.079            Weak                           No meaningful survival difference for Tableau
+         Airflow             0.00                0.08              -0.081            Weak                           No meaningful survival difference for Airflow
+             dbt             0.00                0.11              -0.108            Weak                               No meaningful survival difference for dbt
+    Scikit-learn             0.00                0.26              -0.258            Weak                      No meaningful survival difference for Scikit-learn
+          Pandas             0.00                0.32              -0.319            Weak                            No meaningful survival difference for Pandas
+        BigQuery             0.00                0.37              -0.373            Weak                          No meaningful survival difference for BigQuery
+           NumPy             0.00                0.39              -0.393            Weak                             No meaningful survival difference for NumPy
+       Snowflake             0.00                0.51              -0.508        Moderate           Roles requiring Snowflake fill quickly — high market velocity
+        Power BI             1.39                2.35              -0.961        Moderate            Roles requiring Power BI fill quickly — high market velocity
+               R             4.16                5.61              -1.458        Moderate                   Roles requiring R fill quickly — high market velocity
+Machine Learning             2.22                3.98              -1.763        Moderate    Roles requiring Machine Learning fill quickly — high market velocity
+
+=== SKILL × ROLE TYPE MATRIX (% of postings) ===
+         role_type   SQL  Python  Excel  Power BI  Tableau    R  Statistics  Machine Learning  Pandas  NumPy  Scikit-learn  AWS  Azure  GCP  Spark  Airflow  dbt  Looker  BigQuery  Snowflake
+Analytics Engineer 100.0    40.0   20.0      20.0     40.0 20.0        20.0              40.0     0.0    0.0           0.0 20.0    0.0  0.0    0.0     40.0 40.0    20.0      40.0       40.0
+  Business Analyst  27.3     7.6   35.3      17.6     10.7  2.8         6.9               5.5     0.7    0.0           0.0  3.1    8.7  1.7    0.0      0.0  0.3     0.7       0.0        1.4
+      Data Analyst  60.1    44.4   38.9      44.8     33.7 31.4        47.4              24.8     3.6    2.6           1.3  4.2    4.6  1.6    2.3      1.3  3.3    21.6      10.5       13.4
+     Data Engineer  73.8    66.7    2.4      11.9      2.4  2.4         4.8              19.0     7.1    0.0           2.4 31.0   35.7 16.7   23.8     21.4 14.3     4.8       4.8       23.8
+    Data Scientist  68.0    89.5    3.9      14.8     16.0 27.7        76.6              78.5    45.3   44.5          44.9 14.5   11.3  7.0    8.2      4.7  0.8     3.1       8.2        9.8
+       ML Engineer  12.0    84.0    4.0       4.0      4.0  0.0        20.0              96.0    16.0   12.0          32.0 44.0   32.0 28.0   20.0      4.0  0.0     0.0       0.0        0.0
+   Product Analyst  82.6    43.5    8.7      65.2     65.2  8.7        43.5               4.3     0.0    0.0           0.0  0.0    4.3  0.0    0.0      4.3  4.3    39.1      21.7        4.3
+
+=== SKILL CO-OCCURRENCE (top 15 pairs) ===
+                     pair_label  correlation  both_mentioned           strength
+                 Pandas + NumPy        0.934             123 Very strong (≥0.8)
+           NumPy + Scikit-learn        0.804             105 Very strong (≥0.8)
+          Pandas + Scikit-learn        0.789             108      Strong (≥0.6)
+                      AWS + GCP        0.672              41      Strong (≥0.6)
+           BigQuery + Snowflake        0.627              47      Strong (≥0.6)
+             Power BI + Tableau        0.614             154      Strong (≥0.6)
+               Tableau + Looker        0.540              78    Moderate (≥0.4)
+Machine Learning + Scikit-learn        0.536             127    Moderate (≥0.4)
+       Machine Learning + NumPy        0.522             123    Moderate (≥0.4)
+      Python + Machine Learning        0.510             270    Moderate (≥0.4)
+      Machine Learning + Pandas        0.505             127    Moderate (≥0.4)
+                   SQL + Python        0.494             351    Moderate (≥0.4)
+            Python + Statistics        0.486             292    Moderate (≥0.4)
+                    Azure + GCP        0.484              32    Moderate (≥0.4)
+                    AWS + Azure        0.474              46    Moderate (≥0.4)
+
+=== INDIA SKILL PROFILE ===
+           skill  india_pct  global_tech_pct  india_vs_global        india_emphasis
+             SQL       53.2             52.3              0.8     Similar to global
+          Python       44.1             47.4             -3.2 India emphasises less
+           Excel       33.3             24.9              8.4 India emphasises more
+      Statistics       29.7             40.1            -10.3 India emphasises less
+        Power BI       27.0             26.2              0.8     Similar to global
+         Tableau       25.2             20.5              4.7 India emphasises more
+Machine Learning       24.3             34.7            -10.3 India emphasises less
+               R       13.5             18.9             -5.4 India emphasises less
+          Looker       10.8              9.3              1.5     Similar to global
+       Snowflake       10.8              8.8              2.0     Similar to global
+        BigQuery        9.9              6.6              3.4 India emphasises more
+             AWS        8.1              8.9             -0.8     Similar to global
+    Scikit-learn        8.1             13.5             -5.4 India emphasises less
+           NumPy        7.2             13.2             -6.0 India emphasises less
+          Pandas        6.3             14.4             -8.1 India emphasises less
+           Azure        5.4              9.7             -4.3 India emphasises less
+           Spark        4.5              4.5             -0.0     Similar to global
+             GCP        3.6              4.4             -0.8     Similar to global
+         Airflow        1.8              3.1             -1.3     Similar to global
+             dbt        0.9              2.3             -1.4     Similar to global
+
+=== SURVIVAL BY SKILLS COUNT BUCKET ===
+skill_bucket  total  survived  survival_pct  disappearance_pct
+    0 skills  10502       243           2.3               97.7
+     1 skill   3547        90           2.5               97.5
+    2 skills    584        19           3.3               96.7
+    3 skills    185         5           2.7               97.3
+   4+ skills    294         4           1.4               98.6
+
+=== SKILL CATEGORY DEMAND ===
+         category                        skills_in_group  tech_postings_pct  tech_count
+   Core Analytics                 SQL, Excel, Statistics               72.0         681
+      Programming Python, R, Pandas, NumPy, Scikit-learn               49.4         467
+          ML / AI         Machine Learning, Scikit-learn               34.8         329
+    Visualisation              Power BI, Tableau, Looker               31.2         295
+Cloud & Warehouse   AWS, Azure, GCP, BigQuery, Snowflake               22.0         208
+ Data Engineering                    Spark, Airflow, dbt                7.8          74

@@ -1,0 +1,38 @@
+LinkedIn Job Decay Tracker — Data Load Report
+Run at: 2026-06-27 12:36:03
+============================================================
+
+[April] Loading: data\raw\LinkedIn_April.csv
+  Raw rows: 15,651 | Columns: ['collectedat', 'company', 'companyurl', 'descriptionhtml', 'descriptiontext', 'jobid', 'joburl', 'location', 'postedat', 'searchlocation', 'searchquery', 'searchtimerange', 'seniority', 'title', 'worktype']
+  Dedup: removed 539 duplicate jobids within April (15,651 → 15,112 rows)
+
+[May] Loading: data\raw\LinkedIn_May_2026.csv
+  Raw rows: 28,140 | Columns: ['collectedat', 'company', 'companyurl', 'descriptionhtml', 'descriptiontext', 'jobid', 'joburl', 'location', 'postedat', 'searchlocation', 'searchquery', 'searchtimerange', 'seniority', 'source_file', 'title', 'worktype']
+  Dedup: removed 1,172 duplicate jobids within May (28,140 → 26,968 rows)
+
+[June] Loading: data\raw\June_2026.csv
+  Raw rows: 19,063 | Columns: ['collectedat', 'company', 'companyurl', 'descriptionhtml', 'descriptiontext', 'jobid', 'joburl', 'location', 'postedat', 'searchlocation', 'searchquery', 'searchtimerange', 'seniority', 'source_file', 'title', 'worktype']
+  Dedup: removed 2 duplicate jobids within June (19,063 → 19,061 rows)
+
+[Combine] Total rows after concat: 61,141
+  Total unique jobids: 60,413
+
+[Feature Engineering] Processing 61,141 rows
+  role_type distribution:
+role_type
+None                  60195
+Data Analyst            306
+Business Analyst        289
+Data Scientist          256
+Data Engineer            42
+ML Engineer              25
+Product Analyst          23
+Analytics Engineer        5
+  company_type: {'Startup/SME': 58488, 'MNC': 2286, 'Unknown': 367}
+  Extracting skills from descriptiontext...
+  Jobs with ≥1 skill detected: 17,341 of 61,141 (28.4%)
+  posted_days_ago nulls: 17 (sub-minute posts and unparseable values)
+  India jobs: 3,759 | Remote jobs: 4,281
+
+[Output] Saved to: data\combined_jobs.parquet
+  Shape: 61,141 rows × 50 columns
