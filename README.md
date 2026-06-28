@@ -10,7 +10,7 @@
 
 ## Live demo
 
-> Add your deployed URL here after Week 7 deployment.
+> Deployed URL here: https://linkedin-job-decay-tracker-queyw7nttenrpqmru4uoqr.streamlit.app/
 > Backend: Railway · Frontend: Streamlit Cloud
 
 ---
