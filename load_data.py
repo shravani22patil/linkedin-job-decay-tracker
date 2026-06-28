@@ -22,8 +22,8 @@ from pathlib import Path
 from datetime import datetime
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-DATA_DIR    = Path("data")
-RAW_DIR     = DATA_DIR / "raw"
+DATA_DIR    = Path("data/raw")
+RAW_DIR     = DATA_DIR / "demo"
 OUTPUT_FILE = DATA_DIR / "combined_jobs.parquet"
 REPORT_FILE = DATA_DIR / "load_report.txt"
 
