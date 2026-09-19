@@ -35,10 +35,7 @@ st.set_page_config(
 )
 
 import os
-try:
-    API_URL = st.secrets["API_URL"]
-except Exception:
-    API_URL = os.getenv("API_URL", "http://localhost:8000")
+API_URL = "https://linkedin-job-decay-tracker.onrender.com/"
 
 # ── Colour constants (shared across all charts) ────────────────────────────────
 C = {
