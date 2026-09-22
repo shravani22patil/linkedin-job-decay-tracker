@@ -35,7 +35,7 @@ st.set_page_config(
 )
 
 import os
-API_URL = "https://linkedin-job-decay-tracker.onrender.com/"
+API_URL = "https://linkedin-job-decay-tracker.onrender.com""
 
 # ── Colour constants (shared across all charts) ────────────────────────────────
 C = {
