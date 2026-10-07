@@ -169,7 +169,7 @@ div[data-testid="stRadio"] label{color:#E8EAED !important}
 def fetch(endpoint: str) -> dict:
     """GET wrapper — caches for 5 minutes. Returns {} on error."""
     try:
-        r = requests.get(f"{API_URL}{endpoint}", timeout=15)
+        r = requests.get(f"{API_URL}{endpoint}", timeout=30)
         r.raise_for_status()
         return r.json()
     except Exception as e:
