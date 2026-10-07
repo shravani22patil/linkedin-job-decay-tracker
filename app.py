@@ -199,9 +199,12 @@ def to_df(resp: dict) -> pd.DataFrame:
 def api_ok() -> bool:
     """Returns True if the backend is reachable and data is loaded."""
     try:
-        h = requests.get(f"{API_URL}/health", timeout=4).json()
+        r = requests.get(f"{API_URL}/health", timeout=20)
+        r.raise_for_status()
+        h = r.json()
         return h.get("data_loaded", False)
-    except Exception:
+    except Exception as e:
+        st.error(f"Backend connection failed: {type(e).__name__}: {e}")
         return False
 
 
